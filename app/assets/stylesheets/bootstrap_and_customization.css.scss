@@ -1,9 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Rum+Raisin);
 
-$body-bg: lightblue;
-$font-family: 'Rum Raisin', sans-serif;
-$text-color: black;
-$navbar-inverse-bg: rgba(127, 140, 141,1.0);
+$body-bg: 									lightblue;
+$font-family: 							'Rum Raisin', sans-serif;
+$text-color: 								black;
+$navbar-inverse-bg: 				rgba(127, 140, 141,1.0);
 $navbar-inverse-link-color: white;
-$jumbotron-bg: rgba(189, 195, 199,1.0);
+$jumbotron-bg: 							rgba(189, 195, 199,1.0);
+
 @import 'bootstrap';
+
+.center {
+	text-align: center;
+}
