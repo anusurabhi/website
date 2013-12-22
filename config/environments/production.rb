@@ -79,4 +79,14 @@ Website::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
   #For heroku
   config.action_mailer.default_url_options = { :host => 'http://aqueous-tundra-4769.herokuapp.com/' }
+#This helps set paperclip to upload image into amazon s3
+config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+    :bucket => ENV['AWS_BUCKET'],
+    :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
+    :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+  }
+}
+
 end
