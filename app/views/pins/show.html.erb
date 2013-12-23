@@ -10,8 +10,14 @@
         <p><strong><%= @pin.user.email if @pin.user %></strong></p>
 
         <% if @pin.user == current_user %>
-         <%= link_to 'Edit', edit_pin_path(@pin), class: "btn btn-primary btn-xs" %>
-         <%= link_to 'Back', pins_path, class: "btn btn-default btn-xs" %>
+          <%= link_to edit_pin_path(@pin), class: "btn btn-primary btn-xs" do %>
+             <span class="glyphicon glyphicon-edit"></span>
+              Edit
+            <% end %>
+         <%= link_to pins_path, class: "btn btn-default btn-xs" do %>
+         <span class="glyphicon glyphicon-chevron-left"></span>
+          Back
+         <% end %>
         <% end %>
 
       </div>
