@@ -78,7 +78,7 @@ Website::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
   #For heroku
-  config.action_mailer.default_url_options = { :host => 'http://aqueous-tundra-4769.herokuapp.com/' }
+  config.action_mailer.default_url_options = { :host => 'http://kuttappan.herokuapp.com/' }
 #This helps set paperclip to upload image into amazon s3
 config.paperclip_defaults = {
   :storage => :s3,
